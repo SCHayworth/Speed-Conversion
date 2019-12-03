@@ -24,7 +24,7 @@ def main():
     # nine times, incrementing kph by 10 each time.
     print(HEADER)
     for each in range(1,10):
-        print(f'{kph}         {kph_to_mph(kph):.0f}')
+        print(f'{kph:<}         {kph_to_mph(kph):>}')
         kph += 10
 
 
@@ -32,7 +32,7 @@ def main():
 def kph_to_mph(speed):
     '''Converts speed in kilometers-per-hour to miles-per-hour'''
     # Calculate the speed in mph and return the result.
-    mph = speed * 0.6214
+    mph = int(speed * 0.6214)
     return mph
 
 
