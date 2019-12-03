@@ -9,7 +9,11 @@
 # equivalent speeds in miles per hour, starting with 40 kph and ending at 120
 # in 10 kph increments.
 
-
+# Initialize the table header as a string constant.
+HEADER = """
+KPH         MPH
+----------------
+"""
 # Define the main function
 def main():
     '''This is the mainline program logic.'''
@@ -18,12 +22,9 @@ def main():
 
     # Print the table header, then loop through the kph_to_mph function
     # nine times, incrementing kph by 10 each time.
-    print("""
-          KPH         MPH
-          ----------------
-          """)
+    print(HEADER)
     for each in range(1,10):
-        print(f'{kph}         {kph_to_mph(kph)}')
+        print(f'{kph}         {kph_to_mph(kph):.0f}')
         kph += 10
 
 
