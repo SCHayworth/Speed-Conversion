@@ -12,8 +12,8 @@
 # Initialize the table header as a string constant.
 HEADER = """
 KPH         MPH
-----------------
-"""
+----------------"""
+
 # Define the main function
 def main():
     '''This is the mainline program logic.'''
@@ -24,7 +24,7 @@ def main():
     # nine times, incrementing kph by 10 each time.
     print(HEADER)
     for each in range(1,10):
-        print(f'{kph:<}         {kph_to_mph(kph):>}')
+        print(f'{kph:<3}         {kph_to_mph(kph):>3}')
         kph += 10
 
 
